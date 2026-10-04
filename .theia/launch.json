@@ -1,0 +1,108 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Auto Launch",
+            "type": "ccs-debug",
+            "request": "launch",
+            "targetConfig": "C:\\Users\\petri\\OneDrive\\Asiakirjat\\GitHub\\Radar_software\\Radar_Program_dss\\targetConfigs\\AWR2944.ccxml",
+            "connections": [
+                {
+                    "name": "Texas Instruments XDS110 USB Debug Probe",
+                    "cores": [
+                        {
+                            "name": "C66xx_DSP",
+                            "program": "C:\\Users\\petri\\OneDrive\\Asiakirjat\\GitHub\\Radar_software\\Radar_Program_dss\\Debug\\Radar_Program_dss.xe66",
+                            "autoRun": false,
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><PropertyValues><Property id=\"AutoRunToLabelOnRestart\" value=\"false\"/><Property id=\"AutoRunToLabelOnConnect\" value=\"false\"/><Property id=\"ResetOnConnect\" value=\"true\"/></PropertyValues>"
+                            }
+                        },
+                        {
+                            "name": "Cortex_R5_0",
+                            "program": "C:\\Users\\petri\\OneDrive\\Asiakirjat\\GitHub\\Radar_software\\Radar_Program_mss\\Debug\\Radar_Program_mss.xer5f",
+                            "autoRun": false,
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><PropertyValues><Property id=\"AutoRunToLabelOnRestart\" value=\"false\"/><Property id=\"AutoRunToLabelOnConnect\" value=\"false\"/><Property id=\"ResetOnConnect\" value=\"true\"/><Property id=\"HaltOnConnect\" value=\"true\"/></PropertyValues>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "out_of_box_2944_dss",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "out_of_box_2944_dss",
+                "resourceId": "/out_of_box_2944_dss"
+            },
+            "connections": [
+                {
+                    "name": "Texas Instruments XDS110 USB Debug Probe",
+                    "cores": [
+                        {
+                            "name": "C66xx_DSP",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "runToEntryPoint": "main"
+        },
+        {
+            "name": "out_of_box_2944_mss",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "out_of_box_2944_mss",
+                "resourceId": "/out_of_box_2944_mss"
+            },
+            "connections": [
+                {
+                    "name": "Texas Instruments XDS110 USB Debug Probe",
+                    "cores": [
+                        {
+                            "name": "Cortex_R5_0",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "runToEntryPoint": "main"
+        },
+        {
+            "name": "AWR2944.ccxml",
+            "type": "ccs-debug",
+            "request": "launch",
+            "targetConfig": "${workspaceFolder}\\Radar_Program_dss\\targetConfigs\\AWR2944.ccxml"
+        },
+        {
+            "name": "Radar_Program_mss",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "Radar_Program_mss",
+                "resourceId": "/Radar_Program_mss"
+            },
+            "connections": [
+                {
+                    "name": "Texas Instruments XDS110 USB Debug Probe",
+                    "cores": [
+                        {
+                            "name": "Cortex_R5_0",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
