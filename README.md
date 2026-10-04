@@ -1,9 +1,8 @@
 # Radar_software
-By: Petri Miettinen
-Original date: 12/05/26
+By: Vlad
+Original date: 00/00/00
 
-This is the radar software project made for 3rd Year Fontys Eectrical Engineering internship
-as part of Distributed Sensor Systems Plasma Boundary project research.
+
 
 Refer to DSS Radar Program Manual for exact steps in setting up the project.
 
@@ -31,14 +30,5 @@ DDM.
 
 The radar code now compiles and effectively works as a customizable version of the mmWDemo_TDM out of box code.
 
-ENET Functionality has been experimented with and can be enabled and used by uncommenting the initEnetTsk in the main code.
-However, at the time this does not work effectively until the memory of the system can be further played around with.
-
-Another major change is, much of the "original" code of the OOB Demo was relocated into RadarSetup.c file. 
-With this the idea is that for customizing and personal code, the mss_main.c is still used athe primary location for the code, but with much less bloat
-from the original code.
-
-Thanks to the constructor based approach to their task interrupts, basic functions can be implemented separately in the main code. 
-But some functions may require altering the RadarSetup.c code, depending on functional requirements.
 
 
